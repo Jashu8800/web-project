@@ -1,0 +1,148 @@
+body{
+    font-family: 'Lato', 'sans-serif';
+}
+.logo{
+    height: 80px;
+    width: 80px; 
+}
+
+
+.container {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container input {
+    width: 80%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.container button {
+    background-color: #e74c3c;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.container button:hover {
+    background-color: #c0392b;
+}
+.logo{
+    width: 80px;
+    height: 80px;
+}
+
+
+.second {
+  background-color: #f9fbfe;
+}
+.head1 {
+  color: #183b56;
+  
+  font-size: 28px;
+  font-weight: 700;
+}
+.para1 {
+  color: #5a7184;
+  
+  font-size: 16px;
+}
+.sep {
+  text-align: center;
+  background-color: white;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e5eaf4;
+  border-radius: 16px;
+}
+.imgg1 {
+  width: 90px;
+  height: 90px;
+  
+}
+.sep-title {
+  color: #323f4b;
+  
+  font-size: 22px;
+  font-weight: 500;
+}
+.para2 {
+  color: #7b8794;
+  font-size: 16px;
+}
+
+#progress-container {
+    width: 80%;
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 0 auto;
+    height: 30px;
+}
+
+#progress-bar {
+    width: 0;
+    height: 100%;
+    background-color: #c0392b;
+    text-align: center;
+    line-height: 30px;
+    color: white;
+    border-radius: 5px;
+}
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+}
+.icon{
+    font-size: 40px;
+}
+.icon-container {
+    background-color: (244, 237, 237);
+    height: 80px;
+    border-radius: 40px;
+    margin: 15px;
+    padding-top: 22px;
+    padding-bottom: 14px;
+    padding-right: 16px;
+    padding-left: 22px;
+}
+
+.follow-me-section-heading {
+    text-align: center;
+    color: white;
+    font-size: 28px;
+    font-weight: 700;
+  }
+  .icon-container {
+    background-color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+    margin: 15px;
+    padding-top: 22px;
+    padding-bottom: 14px;
+    padding-right: 16px;
+    padding-left: 22px;
+  }
+  .icon {
+    color: #e74c3c;
+    font-size: 35px;
+  }
+  .footer-sec {
+    background-color: #000000;
+  }
+  
+
+

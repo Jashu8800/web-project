@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styl.css">
+    <title>Youtube Downloader</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/ac42c3b1f7.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light " id="mainhome">
+    
+        <a class="navbar-brand" href="#">
+            <img src="/img/Untitled.png" class="logo">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-link active" id="item1" href="#mainhome">Home</a>
+            <a class="nav-link" id="item1" href="#downloaderpage">Downloader</a>
+            <a class="nav-link" id="item1" href="#secondid">How it Works</a>
+            <a class="nav-link" id="item1" href="#thirdid">Features</a>
+            
+          </div>
+        </div>
+      </nav>
+    
+    <div class="link-page " id="downloaderpage" >
+        <div class="container">
+            <h1> Youtube Video Downloader</h1>
+            <input type="text" id="video-link" placeholder="Paste your video link here" />
+            <button onclick="downloadVideo()">Download ➔</button>
+            <div class="for">
+            <select id="format" name="format" required>
+                <option value="mp4">MP4 (Video)</option>
+                <option value="webm">WEBM (Video)</option>
+                <option value="avi">AVI (Video)</option>
+            </select>
+            
+            <select id="videoQuality" name="videoQuality">
+                <option value="144p">144p</option>
+                <option value="240p">240p</option>
+                <option value="360p">360p</option>
+                <option value="480p">480p</option>
+                <option value="720p">720p</option>
+                <option value="1080p">1080p</option>
+                <option value="4k">4K</option>
+            </select>
+            </div>
+                
+            <p>Download Progress</p>
+        <div id="progress-container">
+        <div id="progress-bar"></div>
+        </div>
+        
+        
+            
+   
+    
+        </div>
+
+
+        <div class="second pt-5 pb-5" id="secondid">
+            <div class="container">
+              <div class="row">
+                <div class="col-12">
+                  <h1 class="head1">How It Works?</h1>
+                
+                </div>
+                <div class="col-12 col-md-4">
+                  <div class="sep p-3 mb-3">
+                    <img
+                      src="./img/Untitled (1).png"
+                      class="imgg1"
+                    />
+                    <h1 class="sep-title mt-3">Initiate Download</h1>
+                    <p class="para2">
+                        Copy the required link and paste it.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="sep p-3 mb-3">
+                      <img
+                        src="./img/Untitled (3).png"
+                        class="imgg1"
+                      />
+                      <h1 class="sep-title mt-3">Choose Options and Download</h1>
+                      <p class="para2">
+                        Select the desired download options and click "Download".
+                      </p>
+                    </div>
+                  </div>
+                <div class="col-12 col-md-4">
+                  <div class="sep p-3 mb-3">
+                    <img
+                      src="./img/Untitled (2).png"
+                      class="imgg1"
+                    />
+                    <h1 class="sep-title mt-3">Start Download Process</h1>
+                    <p class="para2">
+                        Click "Download" and wait for the video to be ready.
+                    </p>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+
+        <div class="third" id="thirdid">
+          <div class="container">
+            <div class="row">
+              <div class="col-12">
+                <h1 class="head2">Features</h1>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="shadow item-card p-3 mb-3">
+                  <img
+                    src="./img/Untitled (4).png"
+                    class="imgg1 "
+                  />
+                  <p class="card-title">Free Download</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="shadow item-card p-3 mb-3">
+                  <img
+                    src="./img/Untitled (5).png"
+                    class="imgg1 "
+                  />
+                  <p class="card-title">No Sign-up Required</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="shadow item-card p-3 mb-3">
+                  <img
+                    src="./img/Untitled (6).png"
+                    class="imgg1 "
+                  />
+                  <p class="card-title">Easy to Use</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="shadow item-card p-3 mb-3">
+                  <img
+                    src="./img/Untitled (8).png"
+                    class="imgg1 "
+                  />
+                  <p class="card-title">Compatibility </p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="shadow item-card p-3 mb-3">
+                  <img
+                    src="./img/Untitled (9).png"
+                    class="imgg1 "
+                  />
+                  <p class="card-title">User Friendly Interface</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="shadow item-card p-3 mb-3">
+                  <img
+                    src="./img/Untitled (10).png"
+                    class="imgg1 "
+                  />
+                  <p class="card-title">Safe and Secure</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="shadow item-card p-3 mb-3">
+                  <img
+                    src="./img/Untitled (11).png"
+                    class="imgg1 "
+                  />
+                  <p class="card-title">Free to Access</p>
+                </div>
+              </div>
+              <div class="col-12 col-md-6 col-lg-3">
+                <div class="shadow item-card p-3 mb-3">
+                  <img
+                    src="./img/Untitled (12).png"
+                    class="imgg1 "
+                  />
+                  <p class="card-title">File Management</p>
+                </div>
+              </div>
+            </div>
+            </div>
+        </div>
+
+    
+    <div class="footer">
+        <div class="footer-sec pt-5 pb-5" id="FooterSection">
+            
+                <div class="col-12">
+                  <h1 class="follow-me-section-heading">Follow Me</h1>
+                </div>
+                <div class="col-12">
+                  <div class="d-flex flex-row justify-content-center">
+                    <div class="icon-container">
+                      <i class="fab fa-twitter icon"></i>
+                    </div>
+                    <div class="icon-container ">
+                        <i class="fa fa-whatsapp icon" ></i>
+                    </div>
+                    <div class="icon-container">
+                      <i class="fab fa-instagram icon"></i>
+                    </div>
+                    <div class="icon-container">
+                      <i class="fab fa-facebook icon"></i>
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+                <span class="copyright">Jashu. All rights reserved. 2024.</span>
+            
+        </div>
+    </footer>
+</body>
+</html>
